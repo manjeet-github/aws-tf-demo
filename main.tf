@@ -16,4 +16,9 @@ resource "aws_instance" "ubuntu" {
     owner = "jritenour@hashicorp.com"
     ttl = "24"
   }
+  ebs_block_device{
+  device_name = "/dev/sdg"
+  volume_size = 40
+  volume_type = "standard" 
+  }
 }
