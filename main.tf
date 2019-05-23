@@ -14,7 +14,7 @@ resource "aws_instance" "ubuntu" {
   tags {
     Name = "${var.name}"
     owner = "jritenour@hashicorp.com"
-    ttl = "2"
+    ttl = "1"
   }
   ebs_block_device{
   device_name = "/dev/sdg"
